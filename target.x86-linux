@@ -1,0 +1,3 @@
+CPU=x86
+PACKAGES=packages.x86-linux
+DESCRIPTION="VLC for Linux x86"
