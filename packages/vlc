@@ -1,5 +1,5 @@
 SRC_PROTO=git
-SRC_URI=git@github.com:mathieu-abati/vlc-3.0.23.bbx.git
+SRC_URI=https://github.com/mathieu-abati/vlc-3.0.23.bbx.git
 SRC_REVISION=master
 SRC_BUILD=custom
 SRC_SUPPORTS_SHARING=0
