@@ -36,3 +36,9 @@ goto vlc
 
 > **_NOTE:_** Doing this, VLC runs in the BuildBox container. So you don't have
 > access to host filesystem, only to your project tree.
+
+## Image
+
+The BuildBox project automatically fetchs the *buildbox-vlc* container image.\
+This image is defined in [Dockerfile](Dockerfile), and it setups the build
+environment required for VLC.
