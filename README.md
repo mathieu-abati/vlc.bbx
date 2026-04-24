@@ -19,9 +19,9 @@ Then, build VLC:
 ```bash
 git clone https://github.com/mathieu-abati/vlc.bbx.git
 cd vlc.bbx
-project info
-target set x86-linux
-target build -v
+bbx project info
+bbx target set x86-linux
+bbx target build -v
 ```
 
 To run built VLC, you can do like this, from the `vlc.bbx` project folder:
