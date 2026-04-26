@@ -43,9 +43,15 @@ bbx target test
 
 ### Create VLC AppImage
 
+AppAimages are standalone executable files. You can generate one for VLC by
+running:
+
 ```
 bbx target dist
 ```
+
+The generated AppImage will be available in your `vlc.bbx` project directory,
+at `x86-linux/dist/VLC-x86_64.AppImage`.
 
 ## BuildBox container image for VLC
 
