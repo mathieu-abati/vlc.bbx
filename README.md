@@ -19,7 +19,7 @@ First of all, setup BuildBox following the
 Prepare VLC project:
 
 ```bash
-git clone https://github.com/mathieu-abati/vlc.bbx.git
+bbx clone https://github.com/mathieu-abati/vlc.bbx.git
 cd vlc.bbx
 bbx project info
 ```
