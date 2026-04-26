@@ -1,5 +1,6 @@
 CPU=x86
 TOOLS=tools.x86-linux
 PACKAGES=packages.x86-linux
+TESTS=${BB_PROJECT_PROFILE_DIR}/test.sh
 DIST=${BB_PROJECT_PROFILE_DIR}/dist.sh
 DESCRIPTION="VLC for Linux x86"
