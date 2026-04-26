@@ -9,36 +9,50 @@ For now the following targets are supported:
 | ----------- | ----------- |
 | x86-linux | Linux x86 build |
 
-## Usage
+## Build and run VLC
+
+### Prerequisites
 
 First of all, setup BuildBox following the
 [installation guide](https://buildbox.trusted-objects.com/getting-started/install.html).
 
-Then, build VLC:
+Prepare VLC project:
 
 ```bash
 git clone https://github.com/mathieu-abati/vlc.bbx.git
 cd vlc.bbx
 bbx project info
+```
+
+### Build VLC for Linux x86 64
+
+```bash
 bbx target set x86-linux
 bbx target build -v
 ```
 
-To run built VLC, you can do like this, from the `vlc.bbx` project folder:
+### Run built VLC media player
 
 ```bash
 xhost +local:docker
-bbx shell
-export DISPLAY=:0
-goto vlc
-./bin/vlc
+bbx target test
 ```
 
 > **_NOTE:_** Doing this, VLC runs in the BuildBox container. So you don't have
 > access to host filesystem, only to your project tree.
 
-## Image
+### Create VLC AppImage
 
-The BuildBox project automatically fetchs the *buildbox-vlc* container image.\
-This image is defined in [Dockerfile](Dockerfile), and it setups the build
-environment required for VLC.
+```
+bbx target dist
+```
+
+## BuildBox container image for VLC
+
+The BuildBox project automatically fetchs the *buildbox-vlc* container image.
+
+This image is derived from BuildBox base image, and is defined in
+[Dockerfile](Dockerfile).
+It setups the build environment required for VLC.
+
+[Visit DockerHub page](https://hub.docker.com/repository/docker/mathieuabati/buildbox-vlc/general)
