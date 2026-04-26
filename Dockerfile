@@ -16,3 +16,11 @@ RUN apt install --yes \
 	qtbase5-dev \
 	qtdeclarative5-dev \
 	libqt5svg5-dev
+# For dist and AppImage
+RUN apt install --yes \
+	squashfs-tools \
+	libfuse2 \
+	desktop-file-utils \
+	libglib2.0-bin \
+	binutils \
+	patchelf
